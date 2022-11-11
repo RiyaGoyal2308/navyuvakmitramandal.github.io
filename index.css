@@ -1,0 +1,288 @@
+body{
+    height:100vh;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fdfaf0;
+    border-top: none;
+    text-align: center;
+}
+
+#navbar{
+    height:120px;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    background-color:#be9885;
+    position: fixed;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar a{
+    padding: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-family: 'Georgia';
+
+}
+#navbar a:hover{
+    background-color: #5f9ea0;
+}
+.logo-img{
+    width: 50%;
+    height: 120px;
+    float: left;
+}
+.logo-img img{
+    height: 100px;
+    width: 150px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.name {
+    font-size: 32px;
+    margin-top: 12px;
+    margin-left: 250px;
+    text-align: left;
+    text-shadow: 0px 1px 3px #fff;
+    font-family: 'Georgia';
+    letter-spacing: 2.5px;
+    vertical-align: middle;
+    font-weight: 750;
+    color: white;
+}
+
+.nav-links{
+    margin: 20px 0px;
+    width: 50%;
+    height: 90px;
+    text-align: right;
+}
+.nav-links a{
+    float: right;
+    margin: 0px 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+}
+
+#poster-img{
+    height: 390px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#poster-img img{
+    margin-top: 130px;
+    width: 80%;
+    height: 240px;
+    border: 5px solid red;
+}
+
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-about{
+    width: 50%;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.div-about h2{
+    font-weight: 700;
+    font-size: 54px;
+    margin-bottom: 0px;
+    letter-spacing: 1.5px;
+    color: #330003;
+}
+
+.div-about p{
+    font-size: 38px;
+    color: darkred;
+    font-weight: 500;
+    letter-spacing: 1.0px;
+}
+
+.div-about h2, .div-about p{
+    font-family: 'Gabriola';
+    margin: 20px 30px 20px 50px;
+}
+
+#success-stories{
+    height: 600px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+#success-stories h1{
+    font-family: 'Comic Sans MS';
+    letter-spacing: 1.2px;
+    font-size:44px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #330003;
+}
+p{
+    font-size: 25px;
+}
+
+.mySlides {
+        display: none;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slideshow-container img{
+    width: 80%;
+    height: 390px;
+    display: block;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade 2s;
+}
+
+.prev,.next {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top:-220px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: silver;
+      }
+.prev {
+    left: 140px;
+    border-radius: 3px 0 0 3px;
+      }
+.next {
+    right: 140px;
+    border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover {
+    background-color: black;
+}
+
+#profile-link{
+    padding: 1vw;
+    display: flex;
+    margin: 30px 60px;
+    text-align: left;
+    max-width: 100%;
+    background-color: #d1d1c7;
+}
+.contact-details{
+    float: left;
+    width: 30%;
+}
+.contact-details p{
+    margin-left: 5vw;
+    font-family: 'Georgia';
+}
+
+.contact-details p:nth-of-type(1){
+    font-weight: 800;
+    font-family: 'Comic Sans MS';
+    color:red;
+    margin-left: 2vw;
+}
+
+.link-div{
+    width: 30%;
+}
+
+.link-div a{
+    font-weight: 600;
+    margin-left: 3.5vw;
+    font-size: 20px;
+}
+.link-div p:nth-of-type(1),.link-div p:nth-of-type(3){
+    font-size: 26px;
+    font-weight: 800;
+    font-family: 'Comic Sans MS';
+    color:red;
+    margin-left: 2vw;
+}
+
+.footer-right{
+    max-width: 35%;
+    float: right;
+    display: flex;
+}
+.logo-img-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img-footer img{
+    width: 300px;
+    height: 200px;
+}
+.logo-img-footer .name-footer{
+    text-align: right;
+    color: mediumvioletred;
+    line-height: 2;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.logo-img-footer h2{
+    font-size: 32px;
+    font-weight: 1000;
+    font-family: 'Georgia';
+}
+#profile-link p{
+    font-family: 'Georgia';
+    font-size: 20px;
+}
+
+footer{
+    margin-bottom: 0;
+    max-height: 30px;
+    border: 2px solid pink;
+    background-color: silver;
+}
+footer p{
+    font-size: 18px;
+    color: darkblue;
+}
+
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+        }
+}
+

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <title>Navyuvak Mitra Mandal</title>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=devie-width initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/29eeafb53c.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        
+        
+    <navbar id="navbar">
+        
+        <div class="logo-img">
+            <img src="images/NMM_logo.jpg" class="logo-img">
+            <p class="name">Navyuvak<br>Mitra Mandal</p>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#success-stories">Home</a>        
+          <a href="About.html">About Us</a>
+          <a href="#profile-link">Contact</a>
+        </div>
+    
+    </navbar>
+     
+        <section id="poster-img">
+        <img src="images/Poster-NMM.jpg" class="poster-image">    
+        </section>
+        
+        <section id="about">
+            <div class="div-about">
+                    <h2>About Us</h2>
+                    <p><i>Navyuvak Mitra Mandal, an Indian social organization, helping many families every year for the marriage of their daughters and sons. Our Organization was established in 2016 and till now we have successfully organized four "Samuhik Vivah" in the year 2016 to 2019.
+                    We're working on organizing more such events in the future...<a href="About.html">read more</a></i>
+                
+                </p>
+            </div>  
+        </section>
+        
+        <section id="success-stories">
+        <h1> These are some of the success stories... </h1>
+            <div class="slideshow-container">
+                <img class="mySlides" src="images/img01.jpg">
+                <img class="mySlides" src="images/img02.jpg">
+                <img class="mySlides" src="images/img03.jpg">
+                <img class="mySlides" src="images/img04.jpg">
+                <img class="mySlides" src="images/img05.jpg">
+		
+      <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+      <a class="next" onclick="plusDivs(1)">&#10095;</a>
+    </div>
+        
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 10000); // Change image every 2 seconds
+}
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+</script>        
+    </section>
+        
+
+    <section id="profile-link">
+        <div class="contact-details">
+        <p class="contact-details-head">For any such services contact</p>
+            <p>Vikas Aggarwal<a href="tel:+919716001017">(+91) 971-600-1017</a></p>
+            <p>Deepak Goyal<a href="tel:+919213148775">(+91) 921-314-8775</a></p>
+            <p>Sumit Aggarwal<a href="tel:+919540219870">(+91) 954-021-9870</a></p>
+            <p>Manish Bansal<a href="tel:+919818907423">(+91) 981-890-7423</a></p>
+            <p>Shailesh Gupta<a href="tel:+919871327300">(+91) 987-132-7300</a></p>
+            <p>Sunil Singla<a href="tel:+917015619157">(+91) 701-561-9157</a></p>
+            <p>Ankur Gupta<a href="tel:+918368696142">(+91) 836-869-6142</a></p>
+            <p>Ashish Aggarwal<a href="tel:+1(480) 465-2652">+1(480) 465-2652</a></p>
+            
+        </div>
+        <div class="link-div">
+            <p>Or email us at</p> 
+            <p><a href="mailto:navyuvakmm2016@gmail.com">navyuvakmm2016@gmail.com</a></p>
+            <p>links to few of our success ceremonies</p>
+            <p><a href="https://youtu.be/q-35xFbBd4w">Youtube</a></p>
+            <p><a href="http://www.facebook.com/story.php?story_fbid=1538579972949602&id=693899750750966&scmts=scwsilttsdd&extid=vbeP0slBhCWXiGTP">Facebook</a></p>
+          </div>
+         </div>
+        <div class="footer-right">
+        <div class="logo-img-footer">
+            <h2 class="name-footer">Navyuvak<br>Mitra Mandal</h2>
+            <img src="images/NMM_logo.jpg" class="logo-img">
+        </div>
+            
+        
+      
+    </section>
+        
+        <footer>
+            <p>© Created for Navyuvak Mitra Mandal</p>
+    </footer>
+    
+    
+    </body>
+</html>
